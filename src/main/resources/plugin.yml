@@ -1,0 +1,4 @@
+name: CommandGuard
+version: '${project.version}'
+main: dev.ev1dent.commandguard.CGMain
+api-version: '1.20'
