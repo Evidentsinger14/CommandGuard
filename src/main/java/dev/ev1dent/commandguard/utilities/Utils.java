@@ -1,15 +1,16 @@
 package dev.ev1dent.commandguard.utilities;
 
 import dev.ev1dent.commandguard.CGMain;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 
 public class Utils {
 
     // Allows me to be lazy, and use colors cleanly. :)
-    public String Color(String s) {
-        return ChatColor.translateAlternateColorCodes('&', s);
+    public Component Color(String s) {
+        return MiniMessage.miniMessage().deserialize(s);
     }
 
     // Logging
@@ -30,4 +31,3 @@ public class Utils {
     }
 
 }
-//if you're reading this, no you're not.
